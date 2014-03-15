@@ -165,7 +165,7 @@ body {
     height: 100%;
     max-height: 100%;
     font-family: 'Noto Serif', serif;
-    font-size: 2.0rem;
+    font-size: 1.5rem;
     line-height: 1.6em;
     color: #3A4145;
 }
@@ -198,8 +198,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4rem;
-    line-height: 1.2em;
+    font-size: 2rem;
     letter-spacing: -1px;
     text-indent: -2px;
 }
@@ -430,8 +429,7 @@ margin on the iframe, cause it breaks stuff. */
 /* Creates a responsive wrapper that makes our content scale nicely */
 .inner {
     position: relative;
-    width: 80%;
-    max-width: 700px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -452,10 +450,9 @@ margin on the iframe, cause it breaks stuff. */
     display: table;
     width: 100%;
     height: 60%;
-    margin-bottom: 5rem;
     text-align: center;
-    color: #fff;
-    background: #303538 no-repeat center center;
+    color: rgba(255, 0, 0, 0.75);
+    background: #fff no-repeat center center;
     background-size: cover;
 }
 
@@ -475,33 +472,100 @@ margin on the iframe, cause it breaks stuff. */
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
     margin: 10px 0 10px 0;
-    font-size: 5rem;
+    font-size: 15rem;
     letter-spacing: -1px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
-    text-shadow: 0 1px 6px rgba(0,0,0,0.1);
 }
 
 .blog-description {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     line-height: 1.5em;
-    font-weight: 300;
-    font-family: 'Noto Serif', serif;
+    font-weight: 800;
     letter-spacing: 0;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* blog nav */
+.blog-navigation {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    word-spacing: 3rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    line-height: 32px;
+}
+
+.blog-navigation a {
+    text-decoration: none;
+}
+
+.blog-navigation ul {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.blog-navigation ul li {
+    display: inline;
+}
+
+.blog-navigation .addthis_toolbox {
+  position: absolute;
+  margin-right: 5rem;
+}
+
+.blog-sidebar {
+  float: right;
+  width: 15%;
+  max-width: 150px;
+  margin-top: -4rem;
+  overflow: hidden;
+  padding-right: 1rem;
+}
+
+.blog-sidebar img {
+  margin: 0;
+  width: 100%;
+  padding: 2px;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    width: 80%;
+    max-width: 700px;
+    padding: 1rem;
+}
+
+.index {
+    max-width: inherit;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width:80%;
-    max-width: 700px;
-    margin: 4rem auto;
-    padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
+    width:20%;
+    float: left;
+    padding: 1rem;
+/*    margin: 4rem auto;
+    padding-bottom: 4rem; */
     word-break: break-word;
     hyphens: auto;
+    overflow: hidden;
+}
+
+.index .post {
+    display: inline-block;
+    height: 400px;
+ }
+
+.index .post a {
+    text-decoration: none;
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
@@ -532,16 +596,20 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .post-excerpt p {
-    margin: 1.6rem 0 0 0;
+    margin: 0.5rem 0 0 0;
     font-size: 0.9em;
     line-height: 1.6em;
 }
 
+.post-excerpt img {
+    width: 100%;
+}
+
 .post-meta {
     display: inline-block;
-    margin: 0 0 5px 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
+    line-height: 1rem;
     color: #9EABB3;
 }
 
@@ -609,6 +677,8 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Tweak the .post wrapper style */
 .post-template .post {
+    width: auto;
+    float: none;
     margin-top: 0;
     border-bottom: none;
     padding-bottom: 0;
@@ -651,7 +721,7 @@ margin on the iframe, cause it breaks stuff. */
 .post-footer {
     position: relative;
     margin: 4rem 0 0 0;
-    padding: 4rem 0 0 0;
+    padding: 1rem 0 0 0;
     border-top: #EBF2F6 1px solid;
 }
 
@@ -701,9 +771,8 @@ margin on the iframe, cause it breaks stuff. */
     color: #57A3E8;
 }
 
-/* Create some space to the right for the share links */
 .post-footer .author {
-    margin-right: 180px;
+    float: left;
 }
 
 /* Drop the share links in the space to the right.
@@ -711,10 +780,8 @@ margin on the iframe, cause it breaks stuff. */
    to be flexible at smaller screen sizes while the share
    links remain at a fixed width the whole time */
 .post-footer .share {
-    position: absolute;
-    top: 4rem;
-    right: 0;
-    width: 140px;
+    float: right;
+    margin-right: 1rem;
 }
 
 .post-footer .share a {
@@ -753,10 +820,11 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The main wrapper for our pagination links */
 .pagination {
-    position: relative;
+/*    position: relative;
     width: 80%;
     max-width: 700px;
-    margin: 4rem auto;
+    margin: 4rem auto;*/
+    clear: both;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
     color: #9EABB3;
@@ -914,10 +982,22 @@ margin on the iframe, cause it breaks stuff. */
     top: -33px;
 }
 
+/* ==========================================================================
+   9A. Media Queries - Smaller than 1200px
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+
+  .post {
+      width: 25%
+  }
+
+}
 
 /* ==========================================================================
-   9. Media Queries - Smaller than 900px
+   9B. Media Queries - Smaller than 900px
    ========================================================================== */
+
 
 @media only screen and (max-width: 900px) {
 
@@ -935,7 +1015,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .blog-title {
-        font-size: 4rem;
+        font-size: 8rem;
         letter-spacing: -1px;
     }
 
@@ -947,11 +1027,12 @@ margin on the iframe, cause it breaks stuff. */
     .post {
         font-size: 0.9em;
         line-height: 1.6em;
+        width: 42%;
     }
 
-    .post-template .post {
+/*    .post-template .post {
         padding-bottom: 1rem;
-    }
+    } */
 
     .post-template .post-header {
         padding: 40px 0;
@@ -962,9 +1043,9 @@ margin on the iframe, cause it breaks stuff. */
         text-indent: -2px;
     }
 
-    h2 {
-        font-size: 3.8rem;
-    }
+/*    h2 {
+        font-size: 2rem;
+    }*/
 
     h3 {
         font-size: 3.3rem;
@@ -973,7 +1054,21 @@ margin on the iframe, cause it breaks stuff. */
     h4 {
         font-size: 2.8rem;
     }
-
+    .blog-navigation {
+        text-align: right;
+    }
+    .blog-navigation .addthis_toolbox {
+        position: inherit;
+        display: block-inline;
+        float: left;
+    }
+    .blog-sidebar {
+        margin-top: 0;
+        width: 12%;
+    }
+    .content {
+      margin: 0;
+    }
 }
 
 /* ==========================================================================
@@ -1088,6 +1183,29 @@ margin on the iframe, cause it breaks stuff. */
         font-size: 1.1rem;
     }
 
+    .blog-sidebar img {
+        display: inline;
+        height: 3rem;
+        width: inherit;
+        padding: 0px;
+    }
+
+    .blog-sidebar {
+        position: absolute;
+        right: 0;
+        top: 25rem;
+        text-align: right;
+    }
+        
+
+    #instafeed { display: none; } 
+
+    .blog-sidebar .books {
+        white-space: nowrap;
+    }
+    .content {
+        width: auto;
+    }
 }
 
 /* ==========================================================================
