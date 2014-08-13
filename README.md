@@ -1,10 +1,12 @@
-# Casper
+# Textkrieg.de Theme
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+This them is based on [Casper](http://github.com/tryghost/casper/), the default theme for [Ghost](http://github.com/tryghost/ghost/).
 
 ## Copyright & License
 
-Copyright (c) 2013-2014 Ghost Foundation - Released under the MIT License.
+Original work Copyright (c) 2013-2014 Ghost Foundation - Released under the MIT License.
+
+Modified work Copyright 2014 Johannes 'fish' Ziemke
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
