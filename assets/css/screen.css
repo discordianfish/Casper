@@ -484,7 +484,7 @@ margin on the iframe, cause it breaks stuff. */
     line-height: 1.5em;
     font-weight: 800;
     letter-spacing: 0;
-    color: #fff;
+    color: #00f;
     font-family: 'Open Sans', sans-serif;
     text-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
@@ -708,7 +708,6 @@ h4, h5, h6 {
 
 .post-template .blog-title {
     display: inline-block;
-    padding: 2.5rem 0;
 }
 
 .post-content {
@@ -811,6 +810,10 @@ h4, h5, h6 {
     color: #50585D;
 }
 
+.post-footer .flattr {
+    position: absolute;
+}
+
 
 /* ==========================================================================
    6. Third Party Elements - Embeds from other services
@@ -866,7 +869,7 @@ h4, h5, h6 {
 }
 
 .older-posts {
-    right: 0;
+    right: 15%;
 }
 
 .page-number {
@@ -899,6 +902,7 @@ h4, h5, h6 {
     color: #BBC7CC;
     text-align: center;
     background: #F7FAFB;
+    clear: both;
 }
 
 .site-footer a {
