@@ -17,10 +17,6 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
-    <script type="text/javascript" src="//api.flattr.com/js/0.6/load.js?mode=auto"></script>
-    <script type="text/javascript" src="/assets/js/instafeed.min.js"></script>
-    <script type="text/javascript" src="/assets/js/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="/assets/js/imagesloaded.pkgd.min.js"></script>
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -57,8 +53,8 @@
     <nav class="blog-sidebar">
       <!-- AddThis Follow BEGIN -->
       <div class="books">
-      <a href="/dackelkrieg"><img alt="Dackelkrieg" src="/content/images/2014/Mar/dackelblitz_400_0.jpg" /></a>
-      <a href="/die-strenge"><img alt="Die Strenge" src="/content/images/2014/Mar/strenge.jpg" /></a>
+        <a href="/dackelkrieg"><img alt="Dackelkrieg" src="//textkrieg.imgix.net/content/images/2014/Mar/dackelblitz_400_0.jpg" srcset="//textkrieg.imgix.net/content/images/2014/Mar/dackelblitz_400_0.jpg?w=160 160w,//textkrieg.imgix.net/content/images/2014/Mar/dackelblitz_400_0.jpg?w=80 80w,//textkrieg.imgix.net/content/images/2014/Mar/dackelblitz_400_0.jpg?w=20 20w" /></a>
+        <a href="/die-strenge"><img alt="Die Strenge" src="//textkrieg.imgix.net/content/images/2014/Mar/strenge.jpg" srcset="//textkrieg.imgix.net/content/images/2014/Mar/strenge.jpg?w=160 160w,//textkrieg.imgix.net/content/images/2014/Mar/strenge.jpg?w=80 80w,//textkrieg.imgix.net/content/images/2014/Mar/strenge.jpg?w=20 20w"/></a>
       </div>
 <!-- SnapWidget -->
       <div id="instafeed"></div>
@@ -80,6 +76,11 @@
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+    <script type="text/javascript" src="//api.flattr.com/js/0.6/load.js?mode=auto"></script>
+    <script type="text/javascript" src="/assets/js/instafeed.min.js"></script>
+    <script type="text/javascript" src="/assets/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="/assets/js/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript">
     var container = document.querySelector('main.index')
     var msnry;
